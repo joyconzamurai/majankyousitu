@@ -1,0 +1,253 @@
+{% extends 'base.html' %}
+{% block title %}ルール{% endblock %}
+{% block contents %}
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">牌 を14枚集めて完成目指す</h2>
+
+        <p class="lead">
+            麻雀は牌(ハイ／パイ)を14枚揃えて完成形を作るゲームです。一番最初に完成させた人の勝ちです。揃え方には決まりがあり、これが麻雀を楽しくする大きな要素となります。こちらも後で詳しくご紹介します。
+            基本は 3枚1組(メンツ)×4 と 2枚1組(ジャントウ)×1 ＝ 14枚 です。これを4メンツ1ジャントウと言います。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">点数を競う</h2>
+
+        <p class="lead">麻雀はゲームスタート時に各プレイヤーへ点数が配られます。この点数の多寡を競うゲームです。最終的に点数の一番多いプレイヤーが勝者となります。
+            点数で使用されるアイテム点数棒の写真をご覧ください。オンラインゲームやアプリでは数値で表示されます。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">試合数</h2>
+
+        <p class="lead">
+            麻雀は1試合を半荘（ハンチャン）というゲーム単位で行い、何度も勝負を重ねます。1回の勝負を局（キョク）と言い、この局を複数回繰り返して半荘（ハンチャン）が完了します。1人のプレイヤーが勝ち続けると半荘での局数が増えるので、最終的に何局の試合になるかは状況によって毎回変化します。最短で1半荘8局で終了します。詳しくは後程説明します。各局（キョク）では勝者と敗者で毎回点数のやり取りが行われます。半荘終了時に一番点数の多い人が最終的な勝者＝1位となるのです。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">牌(ハイ／パイ)</h2>
+
+        <p class="lead">
+            麻雀は牌(ハイ／パイ)という駒を使用します。牌は大きく分けて、数牌(シューパイ)と呼ばれる数字の牌と、字牌(ジハイ)と呼ばれる文字の牌の2つに分けられます。また、全ての牌が4枚ずつ用意されています。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">数牌</h2>
+
+        <p class="lead">
+            数牌は1～9までの数字を表す牌です。この数牌はさらに萬子(マンズ)、索子(ソーズ)、筒子(ピンズ)の3種類に分類され、それぞれに1～9までの数字が用意されています。9×3種類で計27種類の数牌があり、それぞれが4枚ずつ存在するので、27種類×4枚で108枚を使用します。
+
+            ちなみに、麻雀では数牌の種類の事を色と表現します。例えば一色と言えば、萬子、索子、筒子の中のどれか一種類のことを指します。三色の場合は、これら三種類全てのことですね。頭の片隅に入れておいてください！
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">字牌(ジハイ)</h2>
+
+        <p class="lead">
+            字牌は、「風牌(フォンパイ) または、四喜牌（スーシーパイ）」と「三元牌（サンゲンパイ）」の2種類に分類されます。計7種類あり、それぞれが4枚ずつ存在するので、7種類×4枚で28枚を使用します。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5"> 数牌 萬子(マンズ／ワンズ)</h2>
+
+        <p class="lead">
+            萬子(マンズ／ワンズ)は漢数字＋萬と書かれています。1～9まで各4枚ずつあり合計36枚です。萬という字はお金の単位を表しているそうです。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">数牌 索子(ソーズ)</h2>
+
+        <p class="lead">
+            索子(ソーズ)は1～9まで各4枚ずつあり合計36枚です。索子は穴開き銭に通した紐を図版化したといわれています。中国ではお金はめでたいことや権力の象徴です。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5"> 数牌 筒子(ピンズ)</h2>
+
+        <p class="lead">
+            筒子(ピンズ)はかつての中国の通貨を描いたものだといわれています。萬子、索子とともに数牌は全てお金に由来していますね。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">字牌　風牌(フォンパイ)</h2>
+
+        <p class="lead">
+            字牌の風牌(フォンパイ)は四喜牌（スーシーパイ）とも言います。東南西北 各4枚ずつあり合計16枚です。これらの牌は、方角を表す牌です。読み方はそれぞれ下記の通りです。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">三元牌（サンゲンパイ）</h2>
+
+        <p class="lead">
+            三元牌（サンゲンパイ）は白發中 各4枚ずつあり合計12枚です。三元牌の、は「白い肌」、は「緑の黒髪」、は「赤い唇」と、美しい女性の要素を表していると言われています。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">
+
+            赤牌(アカハイ)
+        </h2>
+
+        <p class="lead">
+            赤い色をした特殊な数牌のことです。赤ドラとも呼ばれ、アガった時に持っていると点数がアップするボーナス的な牌です。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">面子(メンツ)</h2>
+
+        <p class="lead">
+            面子(メンツ)とは3枚1組か4枚1組でワンセットとする牌の組み合わせです。メンツには下記の3種類があります。
+            順子(シュンツ) 3枚1組
+            刻子(コーツ) 3枚1組
+            槓子(カンツ) 4枚1組</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">
+            順子(シュンツ)とは
+        </h2>
+
+        <p class="lead">
+            順子(シュンツ)は、同じ種類の色で数牌(シュウパイ)を連続した数字の3枚1組の組み合わせを作るメンツです。</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">刻子(コーツ)とは</h2>
+
+        <p class="lead">
+            刻子(コーツ)は全く同じ種類の数牌(シューパイ)や字牌(ジハイ)を3枚1組にした組み合わせにしたメンツです。
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">槓子(カンツ)とは</h2>
+
+        <p class="lead">
+
+            槓子(カンツ)は全く同じ種類の数牌(シューパイ)や字牌(ジハイ)を4枚1組にした組み合わせです。面子は原則3枚1組ですが、槓子(カンツ)のみ例外的に4枚1組になります。
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">
+            手牌13枚でテンパイを作る</h2>
+
+        <p class="lead">
+            麻雀は手元に13枚の牌があります。これを手牌(テハイ)と言います。手牌13枚の状態で、各プレイヤーが順番にゲームの最初に作った壁牌(ピーパイ)／牌山(ハイヤマ)から牌をツモ(取得)します。この時点で手牌は14枚になり、ツモと同時にいらない牌を河(ホー)に捨て、これで13枚に戻ります。
+            この手牌がアガり1歩手前の状態になる、つまり後1枚でアガり形が完成する状態をテンパイと言います。漢字では聴牌です。テンパイではない状態をノーテンと言います。テンパイからアガりの形が完成すると手牌は14枚になります。手牌13枚がテンパイとなり、最後のアガり牌の14枚目の牌が揃った時点でアガりの形が完成です。そしてこの最後のアガり牌はロンかツモで揃えます。
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5"> 最後のアガり牌は ロン か ツモ
+            最後のアガり牌の揃え方はロンとツモの2種類があります。
+
+        </h2>
+
+        <p class="lead">
+            ロンは、他家(ターチャ＝他のプレイヤー)が打牌(ダハイ)した河(ホー)の捨て牌を取得して14枚目を揃えてアガりの形を完成させることです。ツモは牌山から取得した牌で最後のアガり牌を揃えてアガりの形を完成させることです。
+            ロンは、14枚目の最後のアガり牌を他の他家(ターチャ＝他のプレイヤー)が打牌(ダハイ)した河(ホー)の捨て牌で揃えることを言います。ロンアガりとも言います。アガり牌をロンしたら、ロンと宣言して自分の手牌を開きます。その際、ロン牌は他家が打牌した状態のままにしておいて下さい。
+            ツモの場合、14枚目の最後のアガり牌を牌山(ハイヤマ)から自分でツモして取得した牌で揃えることを言います。ツモアガりとも言います。アガり牌をツモしたら、ツモと宣言して自分の手牌を開き、アガり牌を手牌と別の場所に開いて置きます。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">
+
+            4メンツ1ジャントウの形に加えて、アガるためには 役(ヤク) を作ることが必要です。最も簡単に役を成立させる方法にリーチがあります。
+            <h4>リーチはテンパイ宣言の1翻役</h4>
+
+            リーチ とは
+        </h2>
+
+        <p class="lead">
+            リーチとは、麻雀で最も基本的な役です。役というのは、上述した4メンツ1ジャントウの組み合わせ＋ある決められたルールに従って牌を揃えることで成立するアガるための条件です。役については次の項で詳しく説明します。リーチはその役を最も簡単に成立させる方法です。リーチは1翻という点数が付きます。
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">リーチするには</h2>
+
+        <p class="lead">
+            リーチをするには、テンパイの状態で、現在自分がテンパイであることをリーチの掛け声と共に宣言します。さらに、手持ちの1,000点を供託用としてその場に出します。これがリーチの方法です。テンパイであればいつでもリーチすることが出来ます
+        </p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">ポン、チー、カンしたらリーチ禁止
+            ポン、チー、カンとは？
+        </h2>
+
+        <p class="lead">
+            ポン、チー、カンとは、メンツを作成する際に、他家(ターチャ＝他のプレイヤー)が捨てた牌を取得して揃えることが出来る行為です。鳴く、晒す、などとも言います。通常牌山からのツモで4メンツ1ジャントウを揃えていきますが、他家が捨てた牌を利用するとより早くテンパイまで漕ぎ着けることが出来るのです。
+            ,000点を供託用としてその場に出します。これがリーチの方法です。テンパイであればいつでもリーチすることが出来ます</p>
+    </div>
+</div>
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">
+            リーチが出来ない</h2>
+
+        <p class="lead">
+            ポン、チー、カンを利用すると、完成形を揃えるスピードがアップしますが、一方でデメリットもあります。その1つにリーチが出来なくなる、ということがあります。リーチは門前(メンゼン＝鳴いていない状態)でなければ宣言することが出来ません。初心者の方は注意して下さい。,000点を供託用としてその場に出します。これがリーチの方法です。テンパイであればいつでもリーチすることが出来ます
+        </p>
+    </div>
+</div>
+
+
+<div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+        <h2 class="display-5">「フリテン」を知ろう！
+            フリテン は ロン が出来ない テンパイ のこと
+        </h2>
+
+        <p class="lead">
+            フリテン とは、ロン が出来ない テンパイ のことです。つまり、ロン禁止テンパイです。 テンパイ は先ほど説明しましたが、後1枚必要な 牌 が手牌に加われば アガり形 が完成する状態です。通常は
+            4メンツ＋1ジャントウの形が揃い 役 があれば、いつでも ロン でアガることが出来ます。,000点を供託用としてその場に出します。これがリーチの方法です。テンパイであればいつでもリーチすることが出来ます</p>
+    </div>
+</div>
+
+{% endblock %}

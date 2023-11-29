@@ -1,0 +1,403 @@
+{% extends 'base.html' %}
+
+{% block title %}麻雀{% endblock %}
+
+{% block contents %}
+
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <!-- １翻 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">立直</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">牌の組み合わせに関係なく、面前で聴牌、「リーチ」をかけることで成立するアガリ役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">自摸</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">自分でツモった牌でアガる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">役牌</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">白發中、または場風・自風で同じ牌を3枚そろえる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">断公九</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">数字の２～８牌だけでつくる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">平和</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">メンツが数字の並び、アタマが役牌以外、リャンメン待ちでアガる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">一発</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">立直した巡目でアガる
+            </p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">海底摸月</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">海底牌(最後の巡の牌)でツモアガリするアガリ役です。
+            </p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">河底撈魚</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">1局の最後の捨て牌でロンアガリするアガリ役です。
+            </p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">嶺上開花</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">1翻
+            </h4>
+            <p class="lead">暗槓や明槓をして、ツモってきた嶺上牌でツモアガリするアガリ役です。
+            </p>
+        </div>
+    </div>
+
+    <!-- ２翻 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">ダブル立直</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">２翻
+            </h4>
+            <p class="lead">親の場合は、配牌で聴牌していて、最初の捨て牌でリーチします。子の場合は、ポン、チー、カンのない第一ツモで聴牌して、最初の捨て牌でリーチします。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">三色同刻</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">2翻
+            </h4>
+            <p class="lead">萬子・筒子・索子で同じ数字の牌を3枚ずつそろえる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">三色同順</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">2翻(鳴き1翻)
+            </h4>
+            <p class="lead">萬子・筒子・索子で同じ数字の並びをつくる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">混一色</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">3翻(鳴き2翻)
+            </h4>
+            <p class="lead">萬子・筒子・索子1種類と字牌でつくる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">一気通貫</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">2翻(鳴き1翻)
+            </h4>
+            <p class="lead">同じ種類の牌で123・456・789をつくる</p>
+        </div>
+    </div>
+
+    <!-- 3翻 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">二盃口</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">3翻
+            </h4>
+            <p class="lead">一盃口を2組つくる</p>
+        </div>
+    </div>
+
+
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">純全帯公</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">3翻(鳴き2翻)
+            </h4>
+            <p class="lead">1・9に絡んだ牌だけでつくる</p>
+        </div>
+    </div>
+    <!-- 5翻 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">清一色</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">6翻(鳴き5翻)
+            </h4>
+            <p class="lead">萬子・筒子・索子1種類でつくる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">流し満貫</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">5翻
+            </h4>
+            <p class="lead">自分の捨牌がすべて１・９・字牌で流局すると成立する役です。
+                捨牌を他家に鳴かれると成立しません。</p>
+        </div>
+    </div>
+
+    <!-- 役満 -->
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">国士無双</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満
+            </h4>
+            <p class="lead">普通のアガリ役のように4つのメンツをそろえるのではなく、7種類の字牌と、数牌の1・9牌をすべて1枚ずつ、計13枚そろえます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">四暗刻</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">4つのメンツを暗刻か暗刻でそろえます。牌の種類は字牌でも数牌でもかまいません。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">九蓮宝燈</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">3種類の数牌のうち1種類だけで、1と9を3枚ずつ、2から8までを1枚ずつそろえます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">大三元</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">白發中の三元牌を、3つとも刻子か槓子でそろえます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">小四喜</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">風牌のうち3つを刻子か槓子でそろえ、さらにもう1つの風牌をアタマにしたアガリ役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">緑一色</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">アタマもメンツも、ソーズの赤い色が入っていない、緑色の牌だけでそろえます。</p>
+        </div>
+    </div>
+
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">字一色</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">7つの字牌だけでアタマもメンツもそろえるアガリ役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">清老頭</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">アタマもメンツもすべて数牌の1・9牌(老頭牌という)だけでそろえます。
+            </p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">字一色</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">7つの字牌だけでアタマもメンツもそろえるアガリ役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">天和</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">親の場合に限定される役満で、最初の14枚の配牌でアガっていることをいいます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">地和</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">子の場合に限定される役満で、第一ツモでアガることをいいます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">四槓子</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">暗刻でも明槓でもよいので、4組の槓子をそろえます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">大四喜</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">二倍役満</h4>
+            <p class="lead">風牌を4つとも刻子か槓子でそろえたアガリ役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">国士無双十三面待ち</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">二倍役満</h4>
+            <p class="lead">１・９・字牌を全種類１つずつ揃えると成立する役です。１・９・字牌の１３種類すべてが待ち牌です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">純正九蓮宝燈</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">二倍役満</h4>
+            <p class="lead">萬子、筒子、索子の１種類で、１・９を３つ、２～８を１つずつ揃えると成立する役です。１～９すべてが待ち牌です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+            <h2 class="display-5">四暗刻単騎</h2>
+            <h4 class="display-7">一般役</h4>
+            <h4 class="display-7">二倍役満</h4>
+            <p class="lead">暗刻（手牌で同じ牌３つを揃えた面子）や暗槓の槓子（手牌で同じ牌４つを揃え槓した面子）を４つ揃えて、単騎待ちであがると成立する役です。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">大七星</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">字牌7種類すべて使って七対子をそろえます。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">人和</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">子が自身の第1ツモ以前にロン和了することで成立する役。地和と同じく、ロン和了の前にチー・ポン・カンがあった場合は無効となる</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">大車輪</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">筒子の2から8までを2枚ずつ使った門前清一色断么九平和二盃口を役満としたもの。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">大竹林</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">大車輪と同じ形を索子で作った場合、大竹林（だいちくりん）という別の役としたもの</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">大数隣</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">大車輪と同じ形を萬子で作った場合を、大数隣（だいすうりん）というこれまた別の役としたもの。</p>
+        </div>
+    </div>
+
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+            <h2 class="display-5">紅孔雀</h2>
+            <h4 class="display-7">ローカル役</h4>
+            <h4 class="display-7">役満</h4>
+            <p class="lead">索子の1、5、7、9（緑一色で使用されない残りの索子）と中を使った和了形役</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
